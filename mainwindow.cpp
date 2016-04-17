@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->gbBoard->hide();
     ui->lblProperty->hide();
+    ui->groupBox2->hide();
 
 }
 
@@ -26,14 +27,42 @@ void MainWindow::on_btnStart_clicked()
 {
 
 
-    if (ui->rb2players->isChecked() || ui->rb3players->isChecked() || ui->rb4players->isChecked())
+    if (ui->rb2players->isChecked())
     {
+    ui->btnStart->hide();
+    ui->groupbox1->hide();
+    ui->groupBox2->show();
+    ui->txtPlayer1->show();
+    ui->txtPlayer2->show();
+    ui->txtPlayer3->hide();
+    ui->txtPlayer4->hide();
 
-     ui->btnStart->hide();
+     /*ui->btnStart->hide();
      ui->groupbox1->hide();
      //QPixmap pixmap("/board1.png");
      //ui->lblBoard->setPixmap(pixmap);
      ui->gbBoard->showFullScreen();
+*/
+    }
+    else if (ui->rb3players->isChecked())
+    {
+        ui->btnStart->hide();
+        ui->groupbox1->hide();
+        ui->groupBox2->show();
+        ui->txtPlayer1->show();
+        ui->txtPlayer2->show();
+        ui->txtPlayer3->show();
+        ui->txtPlayer4->hide();
+    }
+    else if(ui->rb4players->isChecked())
+    {
+        ui->btnStart->hide();
+        ui->groupbox1->hide();
+        ui->groupBox2->show();
+        ui->txtPlayer1->show();
+        ui->txtPlayer2->show();
+        ui->txtPlayer3->show();
+        ui->txtPlayer4->show();
 
     }
 
@@ -190,4 +219,10 @@ void MainWindow::on_btnProperties_clicked()
     }
 
 
+}
+
+void MainWindow::on_btnGame_clicked()
+{
+    QString s = ui->txtPlayer1->toPlainText();
+    std::cout << s.toStdString() << std::endl;
 }
