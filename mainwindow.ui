@@ -197,9 +197,9 @@
     <widget class="QLabel" name="lblBoard">
      <property name="geometry">
       <rect>
-       <x>100</x>
+       <x>130</x>
        <y>0</y>
-       <width>731</width>
+       <width>701</width>
        <height>431</height>
       </rect>
      </property>
@@ -210,6 +210,19 @@
       <pixmap>board1.png</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="lblProperty">
+     <property name="geometry">
+      <rect>
+       <x>-40</x>
+       <y>110</y>
+       <width>341</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
     <zorder>lblBoard</zorder>
     <zorder>btnTrade</zorder>
     <zorder>btnRoll</zorder>
@@ -218,25 +231,13 @@
     <zorder>label_4</zorder>
     <zorder>lblDie1</zorder>
     <zorder>lblDie2</zorder>
-   </widget>
-   <widget class="QLabel" name="lblProperty">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>112</y>
-      <width>341</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
+    <zorder>lblProperty</zorder>
    </widget>
    <widget class="QGroupBox" name="groupBox2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>90</y>
+      <x>180</x>
+      <y>120</y>
       <width>561</width>
       <height>271</height>
      </rect>
@@ -296,12 +297,119 @@
      <property name="text">
       <string>Start Game</string>
      </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblBlue">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>70</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blue</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>90</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Red</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>110</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Green</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>130</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Purple</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>40</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Availble Colors to Choose:</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="lblColor2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>50</y>
+       <width>104</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="lblColor1">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>104</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="lblColor3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>80</y>
+       <width>104</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="lblColor4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>110</y>
+       <width>104</width>
+       <height>21</height>
+      </rect>
+     </property>
     </widget>
    </widget>
    <zorder>gbBoard</zorder>
    <zorder>btnStart</zorder>
    <zorder>groupbox1</zorder>
-   <zorder>lblProperty</zorder>
    <zorder>groupBox2</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">

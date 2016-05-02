@@ -22,6 +22,12 @@ private slots:
 
     void on_btnProperties_clicked();
 
+    void on_btnGame_clicked();
+
+    void on_gbBoard_clicked();
+
+    void on_btnEnd_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
