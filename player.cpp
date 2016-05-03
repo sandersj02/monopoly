@@ -1,10 +1,10 @@
 #include <string>
 #include <vector>
-
+#include <QtGui>
 class player
 {
 public:
-    player(std::string playerName, std::string pieceName, int playerId)
+    player(std::string playerName, QString pieceName, int playerId)
     {
         id = playerId;
         name = playerName;
@@ -19,13 +19,14 @@ public:
     };
     std::string getName()       {return name;}
     int getId()                 {return id;}
-    std::string getPiece()      {return piece;}
+    QString getPiece()      {return piece;}
     int getSpace()              {return space;}
     bool isInJail()             {return inJail;}
     int getMoney()              {return money;}
     bool hasMonopoly(int color) {return monopoly[color];}
     int getJailCards()          {return jailCards;}
     int getLocation()           {return location;}
+    bool getRolled()            {return rolled;}
 
 
     void addMoney(int value)    {money += value;}
@@ -43,7 +44,7 @@ private:
     std::string name;
     int money;
     int space;
-    std::string piece;
+    QString piece;
     bool inJail;
     std::vector<bool> monopoly;
     int jailCards;
